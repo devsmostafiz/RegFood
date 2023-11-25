@@ -17,6 +17,7 @@ ul,ol{
     --blue:#231f40;
     --red:#F82348;
     --white:#ffff;
+    --pera_color:#484747;
     --pera_font:'Manrope', sans-serif;
     --styl_header:'Oleo Script', cursive;
     --heading_font:'Barlow', sans-serif;
@@ -250,7 +251,185 @@ font-family: "Italianno", cursive; */
     color: var(--white);
     font-weight: 700;
 }
-/* ========= Header Area Here =========== */
+/* ========= Daily Offer Area Here =========== */
+#Daily_offer{
+    padding: 120px 0;
+    background-color: #EEF6EB;
+}
+.offer_header{
+    font-family: var(--styl_header);
+    color: var(--red);
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+.offer_header::after {
+    position: absolute;
+    content: "";
+    left: 123px;
+    top: -5px;
+    background-image: url(../images/heading_shapes_1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 82px;
+    height: 30px;
+}
+.offer_title{
+    font-family: var(--heading_font);
+    color: var(--blue);
+    font-size: 35px;
+    font-weight: 800;
+    text-transform: capitalize;
+
+}
+.slider_iconWrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding-top: 40px;
+}
+.clck_arrow_top{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    font-size: 20px;
+    background-color: var(--red);
+    border-radius: 50%;
+    line-height: 38px;
+    text-align: center;
+    color: var(--white);
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+.clck_arrow_top:hover{
+    background-color: var(--blue);
+    color: var(--white);
+}
+.offer_item_wrapper{
+    padding-top: 40px;
+}
+.offer_info_wrapper{
+    margin: 0 15px;
+}
+.offer_item{
+    width: 100%;
+    height: 220px;
+    background-color: #ffff;
+    position: relative;
+}
+.item-inner{
+    background-image: url(../images/offer_item_img1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 90%;
+    height: 200px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 200px;
+}
+.offerCard__title{
+    font-family: var(--heading_font);
+    color: var(--blue);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: all linear 0.3s;
+}
+.item-inner:hover .offerCard__title{
+    color: var(--red);
+}
+.offerCard__pera{
+    font-family: var(--pera_font);
+    color: var(--pera_color);
+    font-size: 16px;
+    font-weight: 400;
+}
+.offer_icon_wrapper{
+    display: flex;
+    gap: 10px;
+}
+.offer__icon{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 28px;
+    background-color: var(--red);
+    border-radius: 50%;
+    text-align: center;
+    color: var(--white);
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+.offer__icon:hover{
+    background-color: var(--blue);
+    color: var(--white);
+}
+.item_inner_two{
+    background-image: url(../images/offer_item_img2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 90%;
+    height: 200px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 200px;
+}
+.item_inner_four{
+    background-image: url(../images/offer_item_img3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 90%;
+    height: 200px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 200px;
+}
+/* ===== Cmn Offer Ciecle ======= */
+.offer_circle {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: var(--red);
+    left: 121px;
+    top: 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle__text{
+    font-family: var(--heading_font);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--white);
+    padding: 10px;
+}
+.offer_item_wrapper{
+    display: flex;
+}
+/* ===== Cmn Offer Ciecle ======= */
 /* ========= Header Area Here =========== */
 /* ========= Header Area Here =========== */
 /* ========= Header Area Here =========== */
