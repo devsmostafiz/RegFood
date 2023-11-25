@@ -1,0 +1,234 @@
+/* ========== Extra Small Device ======== */
+@media(max-width:575.98px){
+    .header_info {
+        display: none;
+    }
+    .header_icon_wrapper {
+        align-items: center;
+        justify-content: center;
+        padding-top: 8px;
+    }
+    /* === Nav Bar Area Here === */
+    .nav_icone_wrapper {
+        display: none;
+    }
+    /* === Banner Area Here === */
+    .banner__heading {
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .banner__subheading {
+        font-size: 39px;
+        font-weight: 600;
+        padding-top: 20px;
+    }
+    .banner__pera {
+        font-size: 18px;
+        padding: 20px 0;
+    }
+    .img_circle{
+        padding: 100px 0;
+        position: relative;
+        height: 340px;
+    }
+    .banner_img {
+        position: absolute;
+        bottom: 0px;
+        right: 79px;
+        width: 267px;
+        height: 290px;
+        top: -8px;
+    }
+    .offer {
+        top: -27px;
+        right: 245px;
+        width: 120px;
+        height: 120px;
+    }
+    .banner_btn {
+        padding: 33px 5px 40px 5px;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .banner_btn input {
+        padding: 20px 20px 20px 20px;
+    }
+    .cmn_btn {
+        position: unset;
+    }
+    /* === Nav Bar Area Here === */
+    /* === Nav Bar Area Here === */
+    /* === Nav Bar Area Here === */
+    /* === Nav Bar Area Here === */
+    /* === Nav Bar Area Here === */
+    /* === Nav Bar Area Here === */
+    /* === Nav Bar Area Here === */
+}
+
+/* ========== Small Device ======== */
+@media(min-width:576px) and (max-width:776.98px){
+    .header_info {
+        display: none;
+    }
+    .header_icon_wrapper {
+        align-items: center;
+        justify-content: center;
+        padding-top: 8px;
+    }
+     /* === Nav Bar Area Here === */
+     .nav_icone_wrapper {
+        display: none;
+    }
+    /* === Banner Area Here === */
+    .img_circle{
+        padding: 100px 0;
+        position: relative;
+        height: 340px;
+    }
+    .banner_img {
+        position: absolute;
+        bottom: 0px;
+        right: 79px;
+        width: 267px;
+        height: 290px;
+        top: -8px;
+    }
+    .offer {
+        top: -27px;
+        right: 245px;
+        width: 120px;
+        height: 120px;
+    }
+    .banner_btn {
+        padding: 33px 5px 40px 5px;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .banner_btn input {
+        padding: 20px 20px 20px 20px;
+    }
+    .cmn_btn {
+        position: unset;
+    }
+}
+/* ========== Medium Device ======== */
+@media(min-width:768px) and (max-width:991.98px){
+
+    .header_info {
+        padding: 0 0px 0 44px;
+    }
+    .header_icon_wrapper {
+        justify-content: flex-end;
+    }
+     /* === Nav Bar Area Here === */
+     .nav_icone_wrapper {
+        display: none;
+    }
+    /* === Banner Area Here === */
+    .img_circle{
+        padding: 100px 0;
+        position: relative;
+        height: 500px;
+    }
+    .banner_img {
+        right: 165px;
+        width: 400px;
+        height: 400px;
+        top: -8px;
+    }
+    .offer {
+        right: 157px;
+        top: -26px;
+    }
+    .banner_btn {
+        padding: 0;
+        display: block;
+        width: 100%;
+    }
+    .banner_btn input {
+        padding: 0;
+        width: 100%;
+        padding: 20px 10px;
+    }
+    .cmn_btn {
+        position: absolute;
+       right: 10px;
+        top: 11px;
+        border: none;
+    }
+}
+/* ========== Large Device ======== */
+@media(min-width:992px) and (max-width:1199.98px){
+    .header_icon_wrapper {
+        justify-content: flex-end;
+    }
+    /* === Banner Area Here === */
+    .banner__subheading {
+        font-size: 49px;
+        font-weight: 600;
+        padding-top: 0px;
+    }
+    .banner__pera {
+        font-size: 19px;
+        padding: 14px 0;
+    }
+    .banner_img {
+        top: 35px;
+        right: 50px;
+        width: 400px;
+        height: 400px;
+    }
+    .offer {
+        top: 28px;
+        right: 330px;
+    }
+    .banner_btn {
+        padding: 0;
+        display: block;
+        width: 100%;
+    }
+    .banner_btn input {
+        padding: 0;
+        width: 100%;
+        padding: 20px 10px;
+    }
+    .cmn_btn {
+        position: absolute;
+        left: 315px;
+        top: 11px;
+        border: none;
+    }
+}
+/* ========== Extra Large Device ======== */
+@media(min-width:1200px) and (max-width:1399.98px){
+    .header_icon_wrapper {
+        justify-content: flex-end;
+    }
+    /* === Banner Area Here === */
+    .banner_btn {
+        padding: 0;
+        display: block;
+        width: 100%;
+    }
+    .banner_btn input {
+        padding: 14px 20px 20px 20px;
+        width: 100%;
+    }
+    .cmn_btn {
+        position: absolute;
+        left: 405px;
+        top: 8px;
+        border: none;
+    }
+}
+/* ========== Extra Extra Large Device ======== */
+@media(min-width:1400px) {
+    .header_icon_wrapper {
+        justify-content: flex-end;
+    }
+    /* === Banner Area Here === */
+}

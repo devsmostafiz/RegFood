@@ -1,0 +1,267 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+/* .container{
+    width: 1170px;
+    margin: 0 auto;
+} */
+:root{
+    --blue:#231f40;
+    --red:#F82348;
+    --white:#ffff;
+    --pera_font:'Manrope', sans-serif;
+    --styl_header:'Oleo Script', cursive;
+    --heading_font:'Barlow', sans-serif;
+    --offer_font:"Italianno", cursive;
+}
+
+
+/* font-family: 'Barlow', sans-serif;
+font-family: 'Manrope', sans-serif; */
+/* font-familly: 'Oleo Script', cursive;
+font-family: "Italianno", cursive; */
+
+/* ========= Header Area Here =========== */
+#herader{
+    height: 50px;
+    background-color: var(--blue);
+}
+.header_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_info{
+    padding: 0 70px 0 50px;
+    background-color: var(--red);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+}
+.header_info__email{
+    color: var(--white);
+    margin:0 10px;
+    transition: all linear 0.3s;
+}
+.header_info__email__icone{
+    color: var(--white);
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    transition: all linear 0.3s;
+}
+.header_info_left{
+    cursor: pointer;
+}
+.header_info_left:hover .header_info__email{
+    color: var(--blue);
+}
+.header_info_left:hover .header_info__email__icone{
+    color: var(--blue);
+}
+.header_icon_wrapper{
+    display: flex;
+    gap: 10px;
+}
+.header__icon {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    background-color: var(--red);
+    border-radius: 50%;
+    color: var(--white);
+    transition: all linear 0.3s;
+}
+.header__icon:hover{
+    background-color: var(--white);
+    color: var(--red);
+}
+/* ========= Nav Bar Area Here =========== */
+.backclor{
+    background-color: var(--white);
+}
+.nav_wrapper{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav_logo_box{
+    width: 150px;
+    height: 50px;
+    overflow: hidden;
+}
+.nav__logo{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.cstm_cs_nav{
+    padding-right: 200px;
+}
+.nav_icone_wrapper{
+    display: flex;
+    gap: 30px;
+}
+.navbar__icon{
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: var(--blue);
+    background-color:rgba(255, 0, 0, 0.182);
+    transition: all linear 0.3s;
+}
+.navbar__icon:hover{
+    background-color: var(--red);
+    color: var(--white);
+}
+.nav-item{
+    position: relative;
+    margin: 0 10px;
+}
+.nav-link{
+    color: var(--blue);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: var(--pera_font);
+}
+.nav-link::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--red);
+    left: 0;
+    bottom: -50%;
+    transition: all linear 0.3s;
+}
+.nav-link:hover::after{
+    width: 100%;
+}
+.nav-link:hover{
+    color: #F82348;
+}
+/* ========= Banner Area Here =========== */
+#banner {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.banner_content{
+    background:linear-gradient(#231f40c4,#231f40c4), url(../images/banner_bg\ \(1\).jpg);
+    background-size: 100% auto;
+    position: relative;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.banner_text{
+    padding: 70px 0;
+}
+.banner__heading{
+    color: var(--red);
+    font-family: var(--styl_header);
+    font-size: 35px;
+    font-weight: 500;
+}
+.banner__subheading{
+    color: var(--white);
+    font-family: var(--heading_font);
+    font-size: 60px;
+    font-weight: 700;
+    padding-top: 30px;
+}
+.banner__pera{
+    color: var(--white);
+    font-family: var(--pera_font);
+    font-size: 20px;
+    padding: 30px 0;
+}
+
+/* ========= cmn_btn start =========== */
+.cmn_btn{
+        background: var(--red);
+        text-transform: capitalize;
+        color: var(--white);
+        padding: 12px 40px 12px 40px;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: 600;
+        position: relative;
+        transition: all linear .3s;
+}
+.banner_btn input {
+    border-radius: 30px;
+    border-color: #ddd;
+    padding: 20px 329px 20px 20px;
+}
+.banner_btn {
+    background: var(--white);
+    padding: 30px 10px;
+    border-radius: 80px;
+    position: relative;
+}
+.cmn_btn {
+    position: absolute;
+    left: 412px;
+    top: 17px;
+    border: none;
+}
+/* ========= cmn_btn end =========== */
+.banner_img{
+    position: absolute;
+    border-radius: 50%;
+    top: 35px;
+    right: 110px;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+.offer{
+    position: absolute;
+    top: 50px;
+    right: 470px;
+    width: 150px;
+    height: 150px;
+    background-color: var(--red);
+    border: 5px solid var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.discout__offer{
+    font-family: var(--styl_header);
+    font-size: 37px;
+    color: var(--white);
+    font-weight: 700;
+}
+/* ========= Header Area Here =========== */
+/* ========= Header Area Here =========== */
+/* ========= Header Area Here =========== */
+/* ========= Header Area Here =========== */
+/* ========= Header Area Here =========== */
+/* ========= Header Area Here =========== */
+/* ========= Header Area Here =========== */
+/* ========= Header Area Here =========== */
+/* ========= Header Area Here =========== */
+/* ========= Header Area Here =========== */
+/* ========= Header Area Here =========== */
+/* ========= Header Area Here =========== */
+/* ========= Header Area Here =========== */
+/* ========= Header Area Here =========== */
+/* ========= Header Area Here =========== */
