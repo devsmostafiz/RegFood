@@ -9,6 +9,10 @@ a{
 ul,ol{
     list-style-type: none;
 }
+h1,h2,h3,h4,h5,h6, p{
+    padding: 0;
+    margin: 0;
+}
 /* .container{
     width: 1170px;
     margin: 0 auto;
@@ -202,9 +206,53 @@ font-family: "Italianno", cursive; */
         border-radius: 30px;
         font-size: 16px;
         font-weight: 600;
-        position: relative;
+        letter-spacing: 1px;
+        text-shadow: 6px 3px 2px rgba(0,0,0,.2);
         transition: all linear .3s;
+        position: absolute;
+        left: 412px;
+        top: 17px;
+        border: none;
+        overflow: hidden;
+        transform: perspective(500px) ;
 }
+.cmn_btn::after {
+    position: absolute;
+    content: "";
+    left: -41px;
+    top: 10px;
+    width: 40px;
+    height: 28px;
+    background-image: url(../images/arrow_icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all linear 0.3s;
+}
+.cmn_btn:hover::after{
+    left: 5px;
+}
+.cmn_btn:hover{
+    transform: perspective(500px) ;
+    text-shadow: -6px 3px 2px rgba(0,0,0,.2);
+    background-color: var(--blue);
+    padding: 12px 25px 12px 55px;
+}
+.cmn_btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(35deg, transparent, #ffff, transparent);
+    transition: .3s;
+    opacity: 0.35;
+}
+.cmn_btn:hover::before{
+    left: 100%;
+}
+/* ========= cmn_btn end =========== */
 .banner_btn input {
     border-radius: 30px;
     border-color: #ddd;
@@ -216,13 +264,6 @@ font-family: "Italianno", cursive; */
     border-radius: 80px;
     position: relative;
 }
-.cmn_btn {
-    position: absolute;
-    left: 412px;
-    top: 17px;
-    border: none;
-}
-/* ========= cmn_btn end =========== */
 .banner_img{
     position: absolute;
     border-radius: 50%;
@@ -429,7 +470,129 @@ font-family: "Italianno", cursive; */
 .offer_item_wrapper{
     display: flex;
 }
-/* ===== Cmn Offer Ciecle ======= */
+/* ===== Book Table Area Here======= */
+#booking{
+    padding: 100px 0;
+}
+.bgbooking{
+    background-image: url(../images/reservation_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    position:relative;
+    border-radius: 20px;
+}
+.bgbooking::after{
+    position:absolute;
+    content:"";
+    left:0;
+    top:0;
+    background-color:var(--red);
+    width:100%;
+    height:100%;
+    clip-path: polygon(54% 0, 100% 0%, 100% 100%, 38% 100%);
+    opacity: 90%;
+    border-radius: 20px;
+}
+.booking_form{
+    z-index: 1;
+    position: relative;
+    padding: 50px 50px 10px 50px;
+}
+.booking_formtwo{
+    z-index: 1;
+    position: relative;
+    padding: 10px 50px;
+}
+.booking_formthree{
+    z-index: 1;
+    position: relative;
+    padding: 10px 50px;
+}
+.booking_formfour{
+    z-index: 1;
+    position: relative;
+    padding: 10px 50px 50px 50px;
+}
+.text_innr{
+    width: 100%;
+    padding: 12px 20px;
+    outline: none;
+    resize: none;
+    border: 1px solid #eee;
+    font-size: 16px;
+    font-weight: 300;
+}
+.booking_form h2{
+    font-family: var(--heading_font);
+    font-size:30px;
+    font-weight:600;
+    text-transform:capitalize;
+    border-bottom:1px solid white;
+    margin-bottom:25px;
+    color: var(--white);
+    padding: 0 0 6px 0 !important;
+}
+.info_nam{
+    color: var(--white);
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    font-family: var(--pera_color);
+}
+/* ======= cmn btn =============== */
+.bkn_cmn_btn {
+    background: var(--blue);
+    text-transform: capitalize;
+    color: var(--white);
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 6px 3px 2px rgba(0,0,0,.2);
+    transition: all linear .3s;
+    border: none;
+    overflow: hidden;
+    transform: perspective(500px);
+}
+.bkn_cmn_btn::after {
+    position: absolute;
+    content: "";
+    left: -41px;
+    top: 10px;
+    width: 40px;
+    height: 28px;
+    background-image: url(../images/arrow_icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all linear 0.3s;
+}
+.bkn_cmn_btn:hover::after{
+    left: 5px;
+}
+.bkn_cmn_btn:hover{
+    transform: perspective(500px) ;
+    text-shadow: -6px 3px 2px rgba(0,0,0,.2);
+    padding: 12px 25px 12px 55px;
+}
+.bkn_cmn_btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(35deg, transparent, #ffff, transparent);
+    transition: .3s;
+    opacity: 0.35;
+}
+.bkn_cmn_btn:hover::before{
+    left: 100%;
+}
+/* ======= cmn btn =============== */
 /* ========= Header Area Here =========== */
 /* ========= Header Area Here =========== */
 /* ========= Header Area Here =========== */
