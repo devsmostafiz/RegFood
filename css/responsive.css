@@ -62,7 +62,10 @@
     .slider_iconWrapper {
         display: none;
     }
-    /* === Nav Bar Area Here === */
+    /* === Food Manu Area Here === */
+    .menu_mixit_wrapper {
+        justify-content: center !important;
+    }
     /* === Nav Bar Area Here === */
     /* === Nav Bar Area Here === */
     /* === Nav Bar Area Here === */
@@ -121,6 +124,10 @@
     .slider_iconWrapper {
         display: none;
     }
+    /* === Food Manu Area Here === */
+    .menu_mixit_wrapper {
+        justify-content: center !important;
+    }
 }
 /* ========== Medium Device ======== */
 @media(min-width:768px) and (max-width:991.98px){
@@ -170,6 +177,10 @@
     /* === Daily Offer Area Here=== */
     .slider_iconWrapper {
         display: none;
+    }
+    /* === Food Manu Area Here === */
+    .menu_mixit_wrapper {
+        justify-content: center !important;
     }
 }
 /* ========== Large Device ======== */

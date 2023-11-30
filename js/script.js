@@ -40,3 +40,14 @@ $('.offer_item_wrapper').slick({
       // instead of a settings object
     ]
   });
+
+  // ========= Food Manu Area Here ===========
+
+  $(function(){
+   var containerEl = document.querySelector(".mixit_main");
+    var mixer = mixitup(containerEl, {
+        animation: {
+            duration: 1000
+        }
+    });
+  })
