@@ -336,7 +336,7 @@ font-family: "Italianno", cursive; */
     gap: 10px;
     padding-top: 40px;
 }
-.clck_arrow_top{
+.clck_arrow_prv, .clck_arrow_next{
     width: 40px;
     height: 40px;
     display: inline-block;
@@ -349,7 +349,11 @@ font-family: "Italianno", cursive; */
     transition: all linear 0.3s;
     cursor: pointer;
 }
-.clck_arrow_top:hover{
+.clck_arrow_prv:hover{
+    background-color: var(--blue);
+    color: var(--white);
+}
+.clck_arrow_next:hover{
     background-color: var(--blue);
     color: var(--white);
 }
@@ -434,6 +438,9 @@ font-family: "Italianno", cursive; */
     flex-direction: column;
     padding-left: 200px;
 }
+.item_inner_two:hover .offerCard__title{
+    color: var(--red);
+}
 .item_inner_four{
     background-image: url(../images/offer_item_img3.jpg);
     background-size: cover;
@@ -448,6 +455,9 @@ font-family: "Italianno", cursive; */
     justify-content: center;
     flex-direction: column;
     padding-left: 200px;
+}
+.item_inner_four:hover .offerCard__title{
+    color: var(--red);
 }
 /* ===== Cmn Offer Ciecle ======= */
 .offer_circle {
@@ -801,7 +811,104 @@ font-family: "Italianno", cursive; */
     background-color: var(--red);
     color: #ffff;
 }
-/* ========= Header Area Here =========== */
+/* =========  Team Area Here  =========== */
+
+.team_mrmber_wrapper{
+    padding-top: 40px;
+}
+.single_team {
+    border-radius: 10px;
+    background: var(--white);
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: 25px;
+    transition: all linear .3s;
+    margin: 0 15px;
+}
+.single_team::before {
+    position: absolute;
+    content: "";
+    background: url(../images/chefs_shapes.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 85px;
+    height: 150px;
+    bottom: 0px;
+    left: -15px;
+    transform: rotate(45deg);
+    opacity: .04;
+}
+.single_team_img {
+    width: 200px;
+    height: 200px;
+    border: 10px solid var(--white);
+    border-radius: 50%;
+    box-shadow: var(--boxShadow);
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 10px;
+    background: var(--red);
+    position: relative;
+    z-index: 1;
+    transition: all linear .3s;
+}
+.single_team_img img {
+    border-radius: 50%;
+    transition: all linear .3s;
+}
+.single_team::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 30%;
+    background: var(--red);
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0%, 100% 25%, 50% 100%, 0 25%);
+}
+.single_team_text h4 {
+    text-transform: capitalize;
+    color: var(--pera_color);
+    font-size: 24px;
+    font-family: var(--heading_font);
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    margin: 30px 0px 5px 0px;
+    transition: all linear .3s;
+}
+.single_team_text p {
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--pera_color);
+}
+.single_team_text .team_icon_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 27px;
+}
+.single_team_text .team_icon_wrapper a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #ff7c0821;
+    color: var(--red);
+    font-size: 16px;
+    margin: 0px 5px;
+    border-radius: 50%;
+    transition: all linear .3s;
+}
+.single_team_text .team_icon_wrapper a:hover{
+    background-color: var(--red);
+    color: var(--white);
+}
 /* ========= Header Area Here =========== */
 /* ========= Header Area Here =========== */
 /* ========= Header Area Here =========== */

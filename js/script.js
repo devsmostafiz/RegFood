@@ -1,8 +1,11 @@
+// ========= Daily Offer Area Here ===========
 $('.offer_item_wrapper').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    arrows:false,
+    arrows:true,
+    prevArrow: '.clck_arrow_prv',
+    nextArrow: '.clck_arrow_next',
     autoplay:true,
     responsive: [
       {
@@ -51,3 +54,48 @@ $('.offer_item_wrapper').slick({
         }
     });
   })
+// ========= Team  Offer Area Here ===========
+  $('.team_mrmber_wrapper').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows:true,
+    prevArrow: '.clck_arrow_prv',
+    nextArrow: '.clck_arrow_next',
+    autoplay:false,
+    responsive: [
+      {
+        breakpoint: 1209,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
