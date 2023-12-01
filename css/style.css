@@ -336,7 +336,7 @@ font-family: "Italianno", cursive; */
     gap: 10px;
     padding-top: 40px;
 }
-.clck_arrow_prv, .clck_arrow_next{
+.offer_arrow_prv, .offer_arrow_next{
     width: 40px;
     height: 40px;
     display: inline-block;
@@ -349,11 +349,11 @@ font-family: "Italianno", cursive; */
     transition: all linear 0.3s;
     cursor: pointer;
 }
-.clck_arrow_prv:hover{
+.offer_arrow_prv:hover{
     background-color: var(--blue);
     color: var(--white);
 }
-.clck_arrow_next:hover{
+.offer_arrow_next:hover{
     background-color: var(--blue);
     color: var(--white);
 }
@@ -812,6 +812,66 @@ font-family: "Italianno", cursive; */
     color: #ffff;
 }
 /* =========  Team Area Here  =========== */
+/* ======cmn header start =========== */
+.offer_header{
+    font-family: var(--styl_header);
+    color: var(--red);
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+.offer_header::after {
+    position: absolute;
+    content: "";
+    left: 123px;
+    top: -5px;
+    background-image: url(../images/heading_shapes_1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 82px;
+    height: 30px;
+}
+.offer_title{
+    font-family: var(--heading_font);
+    color: var(--blue);
+    font-size: 35px;
+    font-weight: 800;
+    text-transform: capitalize;
+
+}
+.slider_iconWrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding-top: 40px;
+}
+.clck_arrow_prv, .clck_arrow_next{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    font-size: 20px;
+    background-color: var(--red);
+    border-radius: 50%;
+    line-height: 38px;
+    text-align: center;
+    color: var(--white);
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+.clck_arrow_prv:hover{
+    background-color: var(--blue);
+    color: var(--white);
+}
+.clck_arrow_next:hover{
+    background-color: var(--blue);
+    color: var(--white);
+}
+/* ======cmn header end =========== */
 
 .team_mrmber_wrapper{
     padding-top: 40px;
@@ -909,9 +969,255 @@ font-family: "Italianno", cursive; */
     background-color: var(--red);
     color: var(--white);
 }
-/* ========= Header Area Here =========== */
-/* ========= Header Area Here =========== */
-/* ========= Header Area Here =========== */
+/* ========= Offer Slider Area Here =========== */
+#offer_slider{
+    margin:75px 0;
+}
+.add_slider_single, .add_slider_right{
+    background-image: url(../images/offer_slider_1.png);
+    background-position:cover;
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding:40px;
+    position:relative;
+    overflow:hidden;
+    margin-top:25px;
+    border-radius:10px;
+}
+.add_slider_right{
+    background-image: url(../images/offer_slider_2.png);
+}
+.slider_text{
+    width:50%;
+    position:relative;
+    z-index:1;
+    padding-bottom:10px;
+}
+.slider_text h5 {
+    font-family: var(--styl_header);
+    color: var(--red);
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.slider_text h2 {
+    color: var(--blue);
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+.slider_text p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    color: var(--paraColor);
+    margin-bottom: 30px;
+}
+.slider_text a {
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--blue);
+    border-bottom: 1px solid var(--blue);
+    padding-bottom: 3px;
+    transition: all linear .3s;
+}
+.slider_text a:hover {
+    color: var(--red);
+    border-color: var(--red);
+}
+/* ======== Easy Order Area Here =========== */
+.easy_order_wrapper{
+    margin-right: 0 !important;
+}
+.easy_download{
+    background-image: url(../images/download_img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 450px;
+}
+.download_text_overlay {
+    background: #231f40cc;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+.download_text_overlay h5 {
+    color: var(--red);
+    text-align: center;
+    font-size: 25px;
+    font-family: var(--styl_header);
+}
+.download_text_overlay h2 {
+    text-align: center;
+    color: var(--white);
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.download_icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.download_icon a {
+    background: var(--red);
+    padding: 8px 18px;
+    border-radius: 5px;
+    display: flex;
+    margin: 0px 5px;
+    transition: all linear .3s;
+}
+.download_icon a:hover{
+    background-color: #ff7c08;
+}
+.download_text_overlay .download_icon a .icon {
+    font-size: 35px;
+    color: var(--white);
+    margin-right: 14px;
+}
+.download_text_overlay .download_icon a p {
+    font-size: 20px;
+    color: var(--white);
+    font-weight: 700;
+}
+.download_text_overlay .download_icon a p span {
+    display: block;
+    color: var(--white);
+    font-size: 14px;
+    line-height: 20px;
+}
+.order_img_inner{
+    height: 450px;
+    margin: 0 10px;
+}
+.order_img_inner img{
+    object-fit: cover;
+    height: 100% ;
+}
+/* ========= Testimonial Area Here =========== */
+#testimonial{
+    padding: 75px 0;
+    background-image: url(../images/testimonial_bg.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.testimonial_inner {
+    position: relative;
+    margin-top: 105px;
+    padding: 15px 0px 15px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 105px 12px 0 12px;
+}
+.testimonial_img {
+    width: 150px;
+    height: 150px;
+    border: 5px solid var(--white);
+    box-shadow: var(--boxShadow);
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 0;
+    position: absolute;
+    z-index: 9;
+    top: -80px;
+}
+.testimonial_text {
+    background: var(--blue);
+    padding: 90px 30px 40px 30px;
+    border-radius: 25px;
+    position: relative;
+    -webkit-border-radius: 25px;
+    z-index: 1;
+}
+.testimonial_inner::after {
+    position: absolute;
+    content: "";
+    background: var(--red);
+    width: 50%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    border-radius: 25px;
+}
+.testimonial_text h4 {
+    text-align: center;
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    position: relative;
+}
+.testimonial_text h4::after, .testimonial_text h4::before {
+    position: absolute;
+    content: "";
+    background: url(../images/testi_quot.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    top: 0px;
+    left: 15px;
+    z-index: 1;
+}
+.testimonial_text h4::before {
+    transform: rotate(180deg);
+    left: auto;
+    right: 15px;
+    -webkit-transform: rotate(180deg);
+}
+.testimonial_text .designation {
+    color: var(--white);
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.testimonial_text .feedback {
+    color: #e7e5e5;
+    text-align: center;
+    margin: 20px 0px 25px 0px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.testimonial_text .reating {
+    font-size: 18px;
+    text-align: center;
+    color: var(--red);
+    display: block;
+}
+.testimonial_arrow_prv, .testimonial_arrow_next{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    font-size: 20px;
+    background-color: var(--red);
+    border-radius: 50%;
+    line-height: 38px;
+    text-align: center;
+    color: var(--white);
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+.testimonial_arrow_prv:hover{
+    background-color: var(--blue);
+    color: var(--white);
+}
+.testimonial_arrow_next:hover{
+    background-color: var(--blue);
+    color: var(--white);
+}
+/* ======cmn header end =========== */
 /* ========= Header Area Here =========== */
 /* ========= Header Area Here =========== */
 /* ========= Header Area Here =========== */

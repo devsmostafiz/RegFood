@@ -66,8 +66,20 @@
     .menu_mixit_wrapper {
         justify-content: center !important;
     }
-    /* === Nav Bar Area Here === */
-    /* === Nav Bar Area Here === */
+    /* === Offer Slider Area Here === */
+    .add_slider_single, .add_slider_right {
+        padding: 15px;
+    }
+    .slider_text {
+        width: unset;
+    }
+    /* === Easy Order Area Here === */
+    .download_icon {
+        gap: 15px;
+    }
+    .order_img_inner {
+        padding-top: 20px;
+    }
     /* === Nav Bar Area Here === */
     /* === Nav Bar Area Here === */
     /* === Nav Bar Area Here === */
@@ -128,6 +140,20 @@
     .menu_mixit_wrapper {
         justify-content: center !important;
     }
+    /* === Offer Slider Area Here === */
+    .add_slider_single, .add_slider_right {
+        padding: 30px;
+    }
+    .slider_text {
+        width: unset;
+    }
+     /* === Easy Order Area Here === */
+     .download_icon {
+        gap: 15px;
+    }
+    .order_img_inner {
+        padding-top: 20px;
+    }
 }
 /* ========== Medium Device ======== */
 @media(min-width:768px) and (max-width:991.98px){
@@ -182,6 +208,20 @@
     .menu_mixit_wrapper {
         justify-content: center !important;
     }
+    /* === Offer Slider Area Here === */
+    .add_slider_single, .add_slider_right {
+        padding: 85px;
+    }
+    .slider_text {
+        width: unset;
+    }
+    /* ========= Easy Order Area Here =========== */
+    .download_text_overlay {
+        padding: 50px 106px;
+    }
+    .order_img_inner {
+        padding-top: 20px;
+    }
 }
 /* ========== Large Device ======== */
 @media(min-width:992px) and (max-width:1199.98px){
@@ -224,6 +264,17 @@
         top: 11px;
         border: none;
     }
+    /* === Offer Slider Area Here === */
+    .add_slider_single, .add_slider_right {
+        padding: 20px;
+    }
+    .slider_text {
+        width: unset;
+    }
+    /* === Easy Order Area Here === */
+    .download_icon {
+        gap: 15px;
+    }
 }
 /* ========== Extra Large Device ======== */
 @media(min-width:1200px) and (max-width:1399.98px){
@@ -246,11 +297,19 @@
         top: 8px;
         border: none;
     }
+    /* === Easy Order Area Here === */
+    .download_icon {
+        gap: 15px;
+    }
 }
 /* ========== Extra Extra Large Device ======== */
 @media(min-width:1400px) {
     .header_icon_wrapper {
         justify-content: flex-end;
+    }
+    /* === Easy Order Area Here === */
+    .download_icon {
+        gap: 15px;
     }
     /* === Banner Area Here === */
 }
