@@ -192,3 +192,47 @@ $('.offer_item_wrapper').slick({
         time: 5000
       });
   })
+
+  // ===== News And Blog Area Here =======
+  
+  $('.blog_news_item_wrapper').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows:true,
+    prevArrow: '.News_arrow_prv',
+    nextArrow: '.News_arrow_next',
+    autoplay:true,
+    responsive: [
+      {
+        breakpoint: 1209,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
