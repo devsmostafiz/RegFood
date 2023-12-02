@@ -183,3 +183,12 @@ $('.offer_item_wrapper').slick({
       }
     ]
   });
+
+  // ======== Counter Area Here =======
+
+  $(function(){
+      $('.counter').counterUp({
+        delay: 10,
+        time: 5000
+      });
+  })

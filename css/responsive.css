@@ -80,7 +80,10 @@
     .order_img_inner {
         padding-top: 20px;
     }
-    /* === Nav Bar Area Here === */
+    /* === Counter Area Here  === */
+    .singlle_counter {
+        padding-bottom: 50px;
+    }
     /* === Nav Bar Area Here === */
     /* === Nav Bar Area Here === */
 }
@@ -154,6 +157,10 @@
     .order_img_inner {
         padding-top: 20px;
     }
+    /* === Counter Area Here  === */
+    .singlle_counter {
+        padding-bottom: 50px;
+    }
 }
 /* ========== Medium Device ======== */
 @media(min-width:768px) and (max-width:991.98px){
@@ -222,6 +229,10 @@
     .order_img_inner {
         padding-top: 20px;
     }
+    /* === Counter Area Here  === */
+    .singlle_counter {
+        padding-bottom: 50px;
+    }
 }
 /* ========== Large Device ======== */
 @media(min-width:992px) and (max-width:1199.98px){
@@ -274,6 +285,17 @@
     /* === Easy Order Area Here === */
     .download_icon {
         gap: 15px;
+    }
+    /* ======== Counter Area Here ========== */
+    .singlle_counter .text {
+        width: 170px;
+        height: 170px;
+    }
+    .singlle_counter .text::after {
+        width: 211px;
+        height: 210px;
+        top: -21px;
+        left: -22px;
     }
 }
 /* ========== Extra Large Device ======== */
