@@ -39,6 +39,10 @@
         height: 290px;
         top: -8px;
     }
+    .banner_shape_1 {
+        top: 46px;
+        left: 74%;
+    }
     .offer {
         top: -27px;
         right: 245px;
@@ -85,6 +89,7 @@
         padding-bottom: 50px;
     }
     /* === Nav Bar Area Here === */
+   
     /* === Nav Bar Area Here === */
 }
 
@@ -115,6 +120,10 @@
         width: 267px;
         height: 290px;
         top: -8px;
+    }
+    .banner_shape_1 {
+        top: 46px;
+        left: 74%;
     }
     .offer {
         top: -27px;
@@ -254,6 +263,10 @@
         right: 50px;
         width: 400px;
         height: 400px;
+    }
+    .banner_shape_1 {
+        top: 46px;
+        left: 74%;
     }
     .offer {
         top: 28px;
