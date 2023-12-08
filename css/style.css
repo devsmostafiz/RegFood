@@ -14,8 +14,8 @@ h1,h2,h3,h4,h5,h6, p{
     padding: 0;
     margin: 0;
 }
-body{
-    scroll-behavior: smooth;
+html,body{
+    scroll-behavior: smooth !important;
 }
 /* .container{
     width: 1170px;
@@ -102,6 +102,17 @@ font-family: "Italianno", cursive; */
 .backclor{
     background-color: var(--white);
 }
+nav.sticky{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition: all linear 0.3s;
+    z-index: 999999;
+}
+nav.sticky.navbar .navbar-nav {
+    line-height: 55px;
+}
 .nav_wrapper{
     display: flex;
     justify-content: flex-end;
@@ -115,9 +126,9 @@ font-family: "Italianno", cursive; */
     height: 100%;
     object-fit: cover;
 }
-.cstm_cs_nav{
+/* .cstm_cs_nav{
     padding-right: 200px;
-}
+} */
 .nav_icone_wrapper{
     display: flex;
     gap: 30px;
@@ -155,10 +166,10 @@ font-family: "Italianno", cursive; */
 }
 .navbar .navbar-nav {
     line-height: 80px;
+    margin: 0 auto !important;
 }
 .nav-item{
     position: relative;
-    margin: 0 10px;
 }
 .navbar .navbar-nav .nav-item:hover .nav-link, .navbar .navbar-nav .nav-item .nav-link.active {
     color: var(--red) !important;
@@ -1025,6 +1036,10 @@ font-family: "Italianno", cursive; */
     color: #ffff;
 }
 /* =========  Team Area Here  =========== */
+#team_area{
+    padding: 120px 0;
+    background-color: #EEF6EB;
+}
 /* ======cmn header start =========== */
 .offer_header{
     font-family: var(--styl_header);
@@ -1039,7 +1054,7 @@ font-family: "Italianno", cursive; */
 .offer_header::after {
     position: absolute;
     content: "";
-    left: 123px;
+    left: 143px;
     top: -5px;
     background-image: url(../images/heading_shapes_1.png);
     background-size: cover;
@@ -1098,7 +1113,7 @@ font-family: "Italianno", cursive; */
     overflow: hidden;
     margin-top: 25px;
     transition: all linear .3s;
-    margin: 0 15px;
+    margin: 0 8px;
 }
 .single_team::before {
     position: absolute;
@@ -1731,7 +1746,7 @@ font-family: "Italianno", cursive; */
     padding-bottom: 5px;
     font-family: var(--heading_font);
 }
-.footer_content ul li a {
+.footer_content .ftrAftr li a {
     color: #dfdddd;
     text-transform: capitalize;
     font-size: 16px;
@@ -1742,7 +1757,7 @@ font-family: "Italianno", cursive; */
     transition: all linear .3s;
     font-family: var(--pera_font);
 }
-.footer_content ul li a::after {
+.footer_content .ftrAftr li a::after {
     position: absolute;
     content: "";
     width: 7px;
@@ -1752,7 +1767,7 @@ font-family: "Italianno", cursive; */
     left: 0;
     transition: all linear .3s;
 }
-.footer_content ul li a:hover {
+.footer_content .ftrAftr li a:hover {
     color: var(--red);
 }
 .footer_content .info {
@@ -1798,6 +1813,7 @@ font-family: "Italianno", cursive; */
     right: 30px;
     z-index: 9999;
     cursor: pointer;
+    pointer-events: none;
     text-align: center;
     color: var(--white);
     text-transform: capitalize;
@@ -1808,7 +1824,12 @@ font-family: "Italianno", cursive; */
     border: 1px solid var(--white);
     border-radius: 50%;
     transition: all linear .3s;
+    opacity: 0;
     animation: scroll_amini linear 2s infinite alternate;
+}
+#scroll_btn.active_scroll {
+    opacity: 100%;
+    pointer-events: auto;
 }
 #scroll_btn:hover {
     background: var(--blue);

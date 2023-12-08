@@ -1,3 +1,18 @@
+// ========= Nav Bar Area Here ===========
+var navbar = document.querySelector(".navbar");
+var navbarSupportedContent = document.querySelector("#navbarSupportedContent");
+
+window.onscroll = function(){
+  if( window.scrollY >= navbarSupportedContent.offsetTop){
+    navbar.classList.add("sticky");
+  }
+  else{
+    navbar.classList.remove("sticky");
+  }
+
+}
+
+
 // ========= Daily Offer Area Here ===========
 $('.offer_item_wrapper').slick({
     infinite: true,
@@ -50,7 +65,7 @@ $('.offer_item_wrapper').slick({
    var containerEl = document.querySelector(".mixit_main");
     var mixer = mixitup(containerEl, {
         animation: {
-            duration: 1000
+          duration: 1000
         }
     });
   })
@@ -236,3 +251,21 @@ $('.offer_item_wrapper').slick({
       }
     ]
   });
+
+  //========= scroll btn start ==========
+  
+  $(function() {
+    $("#scroll_btn").click(function(){
+      $("body,html").animate({scrollTop:0});
+    })
+
+    $(window).scroll(function(){
+      var scrolling = $(this).scrollTop();
+      if(scrolling > 300){
+        $("#scroll_btn").addClass("active_scroll");
+      }
+      else{
+        $("#scroll_btn").removeClass("active_scroll");
+      }
+    })
+  })
